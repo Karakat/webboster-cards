@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры карточек</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section class="cards">
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/1.jpg" alt="Летняя обувь">
+            </div>
+            <div class="card__description">
+                <span class="card__title">Летняя обувь, коллекция 2022 года</span>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur eos pariatur
+                    quasi nobis quis distinctio consequatur ullam in corporis magni nostrum cumque voluptatem, tempora
+                    incidunt at accusantium similique hic. Nobis amet ab error non, corporis quos. Autem excepturi nemo
+                    aliquid quisquam dolor quidem cupiditate qui nam quod. Debitis, rerum ex?</p>
+            </div>
+            <div class="card__buttons">
+                <button class="card__order">Купить</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/2.jpg" alt="Осенняя обувь">
+            </div>
+            <div class="card__description">
+                <span class="card__title">Осенняя обувь</span>
+                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, suscipit.</p>
+            </div>
+            <div class="card__buttons">
+                <button class="card__order">Купить</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/3.jpg" alt="Зимняя обувь">
+            </div>
+            <div class="card__description">
+                <span class="card__title">Зимняя обувь</span>
+                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, suscipit.</p>
+            </div>
+            <div class="card__buttons">
+                <button class="card__order">Купить</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image">
+                <img src="./images/4.jpg" alt="Весенняя обувь">
+            </div>
+            <div class="card__description">
+                <span class="card__title">Весенняя обувь</span>
+                <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, suscipit.</p>
+            </div>
+            <div class="card__buttons">
+                <button class="card__order">Купить</button>
+            </div>
+        </div>
+    </section>
+    <div class="popupWrapper">
+        <form class="formOrder" action="#" method="post">
+            <h2 class="formOrder__header">Оставить заказ</h2>
+            <ul class="formOrder__list">
+                <li class="formOrder__item">
+                    <label for="buyer">Имя*:</label>
+                    <span class="buyer__error"></span>
+                    <input class="formOrder__input" type="text" name="buyer" id="buyer" aria-labelledby="Полное имя">
+                </li>
+                <li class="formOrder__item">
+                    <label for="phonenumber">Телефон для связи*:</label>
+                    <input class="formOrder__input" type="tel" name="phonenumber" id="phonenumber" aria-labelledby="Телефон для связи">
+                </li>
+                <li class="formOrder__item">
+                    <label for="purchaseName">Выбранный товар</label>
+                    <input class="formOrder__input" type="text" name="purchase_name" id="purchaseName" aria-labelledby="Название товара">
+                </li>
+                <li class="formOrder__item">
+                    <input class="formOrder__submit" type="submit" value="Отправить" disabled>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
